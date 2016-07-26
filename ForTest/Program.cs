@@ -11,14 +11,6 @@ namespace ForTest
     {
         static void Main(string[] args)
         {
-            var a = new AlgoService();
-            var b = new DataService(-2);
-
-            //b.AddItem(1);
-            //b.AddItem(2);
-
-            //Console.WriteLine(b.GetElementAt(1));
-
             Console.ReadKey();
         }
     }

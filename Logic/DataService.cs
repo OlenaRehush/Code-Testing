@@ -12,7 +12,7 @@ namespace Logic
             _data = new List<int>(capacity);
         }
 
-        //public int ItemsCount => _data?.Count ?? 0;
+        public int ItemsCount => _data?.Count ?? 0;
 
         public void AddItem(int a)
         {

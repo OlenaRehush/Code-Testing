@@ -39,6 +39,22 @@ namespace ForTest
         }
 
         [Test]
+        public void ItemCount_When_given_data_Then_returns_count_of_elements()
+        {
+            //Arrange
+            var dataService = new DataService(4);
+
+            //Act
+            dataService.AddItem(1);
+            dataService.AddItem(2);
+            dataService.AddItem(3);
+            dataService.AddItem(4);
+
+            //Assert
+            Assert.That(dataService.ItemsCount(), Is.EqualTo(4));
+        }
+
+        [Test]
         [TestCase(6)]
         [TestCase(-4)]
         public void GetElementAt_When_given_element_greater_then_count_of_list_or_negative_Then_throws_exception(int index)

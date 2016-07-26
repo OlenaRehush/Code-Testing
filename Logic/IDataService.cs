@@ -4,7 +4,7 @@ namespace Logic
 {
     public interface IDataService
     {
-       // int ItemsCount { get; }
+        int ItemsCount { get; }
 
         void AddItem(int a);
 
